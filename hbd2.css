@@ -1,8 +1,11 @@
-/*@import url('https://fonts.googleapis.com/css2?family=Satisfy&family=Tourney:wght@200&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&family=Tourney:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Atma:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Inconsolata&display=swap');
 *{
   margin: 0;
   padding: 0;
   align-items: center;
+
 }
 img {
   position: absolute;
@@ -15,9 +18,9 @@ img {
   height: 100vh;
   position: relative;
   justify-content: center;
-}
 
-.box {
+}
+#first,#second {
     position: absolute;
     top: 20%;
       bottom: 15%;
@@ -30,18 +33,152 @@ img {
       width: 85%;
       border: 2px solid black;
       background:#549a94;
-
+      box-shadow:-4px 4px 4px black;
+}
+#second{
+  text-align:center;
+  font-size: 80px;
+  z-index:-1;
 }
 
-.box h1{
+#first h1{
   position:  relative;
     margin: auto;
-    transform: translate(-50%,-50);
   width:auto;
    padding: 70px;
-  font-size: 50px;
-  color: white;
+  font-size: 56px;
+  color: black;
   align-content: center;
     font-family: 'Satisfy', cursive;
     font-weight: 50;
 }
+.color_1{
+  color: rgb(111, 205, 255);
+}
+.color_2{
+  color: #c5c693;
+}
+.wished,.name {
+    background: none;
+    position: relative;
+    top: 25%;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+    padding-right: 12px;
+    display: inline-block;
+    color: #060c21;
+    font-weight: 100;
+}
+.name{
+  padding-top:30px;
+
+}
+
+.wished:after{
+  content: "";
+  position: absolute;
+  display: block;
+  left: -20%;
+  top: 110%;
+  color: #db7093;
+  background: #060c21;
+  width: 350px;
+  height: 10px;
+}
+
+button{
+    position:absolute;
+    top: 93%;
+    left:25%;
+    border: 2px solid gray;
+    padding: 5px;
+    font-size: 45px;
+    font-family: 'Inconsolata', monospace;
+    white-space: nowrap;
+    text-align: center;
+    width: 400px;
+    height: 80px;
+    z-index: 1;
+    color: #060c21;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 9px #999;
+}
+
+button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(6px);
+}
+button #btn2{
+  z-index: -1;
+}
+
+
+/* source ="https://css-tricks.com/glitch-effect-text-images-svg/"*/
+.glitch {
+  position: absolute;
+  color: white;
+  font-size: 100px;
+  position: relative;
+  width: 400px;
+  margin: 0 auto;
+  font-family: 'Tourney', cursive;
+  top:47%;
+  font-size:120px;
+
+
+}
+@keyframes noise-anim {
+  0% {
+    clip-path: inset(40% 0 61% 0);
+  }
+  20% {
+    clip-path: inset(92% 0 1% 0);
+  }
+  40% {
+    clip-path: inset(43% 0 1% 0);
+  }
+  60% {
+    clip-path: inset(25% 0 58% 0);
+  }
+  80% {
+    clip-path: inset(54% 0 7% 0);
+  }
+  100% {
+    clip-path: inset(58% 0 43% 0);
+  }
+}
+.glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 2px;
+  text-shadow: -1px 0 red;
+  top: 0;
+  color: white;
+  background: black;
+  overflow: hidden;
+  animation: noise-anim 2s infinite linear alternate-reverse;
+  animation-delay: 1s;
+transform: perspective(200px)rotate(4deg);
+
+}
+
+
+.glitch::before {
+  content: attr(data-text);
+  position: absolute;
+  left: 0px;
+  text-shadow: 1px 0 blue;
+  top: 0;
+  color: white;
+  background: black;
+  overflow: hidden;
+  animation: noise-anim-2 15s infinite linear alternate-reverse;
+    animation-delay: 1s;
+transform: perspective(200px)rotate(4deg);
+}
+/*---------*/
+/***********/
+/**********/
