@@ -22,15 +22,15 @@ img {
 }
 #first,#second {
     position: absolute;
-    top: 20%;
+    top: 10%;
       bottom: 15%;
       left: 0;
       right: 0;
       margin: auto;
     height: 20px;
     background: none;
-     height: 70vh;
-      width: 85%;
+     height: 80vh;
+      width: 90%;
       border: 2px solid black;
       background:#549a94;
       box-shadow:-4px 4px 4px black;
