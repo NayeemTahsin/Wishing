@@ -177,7 +177,7 @@ h2::before {
     font-size: 35px;
     font-family: 'Abril Fatface', cursive;
     white-space: nowrap;
-    left: -100%;
+    left: -50%;
     top: 59%;
     color: #db7093;
     background: #060c21;
